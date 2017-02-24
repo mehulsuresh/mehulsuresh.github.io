@@ -806,34 +806,74 @@
             <div class="eight columns">
 
                <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
+
+
+
+
+
+
+
+
+
+
+               <!-- <form action="" method="post" id="contactForm" name="contactForm"> -->
+               <form id="emf-form" target="_self" enctype="multipart/form-data" method="post" action="http://www.emailmeform.com/builder/form/6Dd05IcqkeStY5aM">
 					<fieldset>
 
                   <div>
 						   <label for="contactName">Name <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" name="contactName">
+						   <!-- <input type="text" value="" size="35" id="contactName" name="contactName"> -->
+                     <input id="element_2" name="element_2" value="" class="validate[optional]" type="text" />
                   </div>
 
                   <div>
 						   <label for="contactEmail">Email <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+						   <!-- <input type="text" value="" size="35" id="contactEmail" name="contactEmail"> -->
+                     <input id="element_7" name="element_7" class="validate[optional,custom[email]]" value=""  type="text" />
                   </div>
 
                   <div>
 						   <label for="contactSubject">Subject</label>
-						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+						   <!-- <input type="text" value="" size="35" id="contactSubject" name="contactSubject"> -->
+                     <input id="element_8" name="element_8" value="" class="validate[optional]" type="text" />
                   </div>
 
                   <div>
-                     <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                     <label for="contactPhone">Phone</label>
+                     <!-- <input type="text" value="" size="35" id="contactSubject" name="contactSubject"> -->
+                     <input id="element_10" name="element_10" class="validate[optional,custom[telephone]]" value="" type="text" />
                   </div>
 
                   <div>
-                     <button class="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif">
-                     </span>
+                     <label for="contactMessage">Message <span class="required">*</span></label><!-- 
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea> -->
+                     <textarea id="element_11" name="element_11" cols="30" rows="15" class="validate[optional] "></textarea>
+                  </div>
+
+                  <div>
+                     <label for="captchaMessage">Captcha</label>
+                     
+<img id="captcha_image" src="http://www.emailmeform.com/builder/captcha/index/ab71b61ddfefbf7bb1bbce5576249315" alt="captcha" onload="if(typeof on_captcha_image_load=='function') on_captcha_image_load();"/>
+
+
+                  <a id="captcha_code_refresh" href="javascript:void(0);"
+                  onclick="document.getElementById('captcha_image').src = 'http://www.emailmeform.com/builder/captcha/index/'+Math.random();return false;"><i class="fa fa-refresh" aria-hidden="true"></i></a></div>
+
+
+                  <div>
+                     <label for="contactPhone"></label>
+                     <input type="text" id="captcha_code" name="captcha_code" maxlength="10" size="10" class="validate[required,funcCall[valid_captcha]]" />
+                  </div>
+                  
+
+                  
+               
+
+
+                  <div>
+                     <input name="element_counts" value="12" type="hidden" />
+                     <input name="embed" value="forms" type="hidden" />
+                     <input  value="Submit" type="submit" />
                   </div>
 
 					</fieldset>
@@ -917,7 +957,8 @@
 
             <ul class="copyright">
                <!-- <li>&copy; Copyright 2014 CeeVee</li> -->
-               <li>Design by <a title="Mehul Suresh" href="https://www.linkedin.com/in/mehulsuresh">Mehul Suresh</a></li>   
+               <li>Design by <a title="Mehul Suresh" href="https://www.linkedin.com/in/mehulsuresh">Mehul Suresh</a></li>  
+
             </ul>
 
          </div>
